@@ -1,0 +1,325 @@
+.container {
+  background-image:url(https://i.gifer.com/origin/b7/b71efa750d39cea5ac11d1e4885f3dcf_w200.webp);  
+  background-size: cover; /* O ajusta a tu preferencia */
+  background-position: center; /* O ajusta a tu preferencia */
+  background-repeat: no-repeat; /* Evita la repetición */
+  width: 100px; /* Ajusta el ancho según tu necesidad */
+  height: 100px; /* Ajusta la altura según tu necesidad */
+  border-radius: 10px; /* Ajusta el borde si lo deseas */
+  padding: 10px; /* Ajusta el relleno si lo deseas */
+  animation: moveAndRotate 5s infinite linear; /* Aplica una animación de rotación */
+}
+.container2{
+  background-image:url(https://i.gifer.com/origin/b7/b71efa750d39cea5ac11d1e4885f3dcf_w200.webp);  
+  background-size: cover; /* O ajusta a tu preferencia */
+  background-position: center; /* O ajusta a tu preferencia */
+  background-repeat: no-repeat; /* Evita la repetición */
+  width: 100px; /* Ajusta el ancho según tu necesidad */
+  height: 100px; /* Ajusta la altura según tu necesidad */
+  border-radius: 10px; /* Ajusta el borde si lo deseas */
+  padding: 10px; /* Ajusta el relleno si lo deseas */
+  animation: moveAndRotateinv 5s infinite linear; /* Aplica una animación de rotación */  
+}
+@keyframes moveAndRotateinv {
+  0% {transform: translate(95vw, 0vh)
+  }
+  25%{transform: translate(-5vw, 100vh);}
+  50%{
+    transform:translate(-5vw, 0vh)
+  }
+  75% {
+    transform: translate(95vw, 100vh) ;
+  }
+  100% {
+    transform: translate(95vw, 0vh) ;
+  }
+}
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(0, 0) ;
+  }
+  25% {
+    transform: translate(95vw, 100vh) ;
+  }
+  50%{transform: translate(95vw, 0vh)
+  }
+  75%{transform: translate(-5vw, 100vh);}
+  100%{
+    transform:translate(-5vw, 0vh)
+  }
+}
+.box{
+  border:1px solid;
+  position:absolute;
+  top:20px;
+  left:20px;
+  width: 200px;
+  height: 300px;
+  animation: cambiarcolor 2002ms forwards infinite linear, cambiodeforma 2002ms alternate infinite linear ;
+}
+@keyframes cambiarcolor {
+  0%{background-color: white;}
+  50%{background-color: yellow;}
+  100%{background-color: red;
+  width: 600px;
+height: 300px;}
+}
+@keyframes cambiodeforma {
+  0%{border-radius: 0%;}
+  50%{border-radius: 25%;}
+  100%{border-radius: 100%;}
+}
+.cuadrado {
+  position: absolute; /* Añade posición absoluta al cuadrado */
+  bottom: 500px; /* Ajusta la distancia desde abajo según tu necesidad */
+  left: 80%; /* Centra el cuadrado horizontalmente */
+  transform: translateX(-50%); /* Centra el cuadrado horizontalmente */
+  width: 100px;
+  height: 100px; /* Ajusta la altura según tu necesidad */
+  background: rgba(0, 153, 201, 1);
+  border: solid 3px #0066CC;
+  transition:  1s; /* Ajusta la duración de la transición */
+}
+.cuadrado:hover{
+  transform:scale(2)rotate(260deg);
+
+  -webkit-box-shadow:26px 26px 31px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow:26px 36px 31 px -17px rgba(0,0,0,0.75);
+  box-shadow: 26px 26px 31px -17px rgba(0,0,0,0.75);
+  background: rgba(0, 153, 201, 1);
+  filter:blur(2px);
+}
+.pulsor{
+  background-image:url(//media.tenor.com/vdNgbqScunYAAAAj/bruhhhhhhh.gif);
+  width: 300px; /* Ancho del contenedor */
+  height: 300px; /* Alto del contenedor */
+  background-size:cover ; /* Ajusta el tamaño del GIF al contenedor */
+  background-repeat: no-repeat; /* Evita la repetición del GIF */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gif-container {
+  width: 300px; /* Ancho del contenedor */
+  height: 300px; /* Alto del contenedor */
+  background-image: url(https://media.istockphoto.com/id/95186195/es/foto/soccer-ball-trazado-de-recorte-incluido.jpg?s=612x612&w=0&k=20&c=eK_7yBMQzJyPb44jo4sJL0xGe8qMYUP6wxxenW7aGrI=
+  ); /* Ruta del archivo GIF */
+  background-size: cover; /* Ajusta el tamaño del GIF al contenedor */
+  background-repeat: no-repeat; /* Evita la repetición del GIF */
+  animation: animacionGIF 2s infinite; /* Nombre de la animación, duración y repetición infinita */
+}
+
+@keyframes animacionGIF {
+  0% { transform: rotate(0deg); } /* Angulo inicial de rotación */
+  100% { transform: rotate(360deg); } /* Angulo final de rotación */
+}
+
+.basket {
+  position: absolute;
+  top: 650px;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 300px; /* Ancho de la canasta */
+  height: 200px; /* Alto de la canasta */
+content:url(/fotos/canasta.png);  
+  background-size: cover;
+}
+
+.basketball {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px; /* Ancho de la bola */
+  height: 130px; /* Alto de la bola */
+  background-image: url(https://media.tenor.com/14CTRPSk5M0AAAAj/luvas-poker-poker-esportes.gif); /* Imagen de la bola */
+  background-size: cover;
+}
+.basketball:active{
+  background-image:url(https://media.tenor.com/fhXc-AdnKMEAAAAM/basketball-shot.gif );
+  position: absolute;
+  top:650px;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 300px; /* Ancho de la canasta */
+  height: 200px; /* Alto de la canasta */
+}
+@keyframes shootBasketball {
+  0% {
+    bottom: 0; 
+    left: 40%; 
+  }
+  50% {
+    bottom: 300px; 
+    left: 65%; 
+  }
+  100% {
+    bottom: 300px; 
+    left: 65%; 
+  }
+}
+
+ /* @keyframes fallBasketball {
+  0% {
+    bottom: 200px; 
+    left: 65%; 
+  }
+  100% {
+    bottom: 0; /
+    left: 65%; 
+  }
+}
+*/
+.imagenvirus {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/fd/fdd2726c56e7d9cd95ad83bef3365f38_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+
+.imagenvirus1 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/3e/3e95ef9ae7d77121e1033990cfbb881b_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.imagenvirus2 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/f5/f57289f07bda3b35fa728b4d01df3f8d_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.imagenvirus3 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/4e/4e72b07aed0c2b216223ec64266fa06b_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.imagenvirus4 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/cc/cc86aa0d3504871bf7bbed38a3f5d236_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.imagenvirus5 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://media.tenor.com/GL0mx2LtvrwAAAAM/virus.gif);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.imagenvirus6 {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://media.tenor.com/D4BpNeRp4v0AAAAM/deal-or-no-deal-deal.gif);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+}
+@keyframes changeColor {
+  0% { color: red; }
+  50% { color: rgb(255, 0, 242); }
+  100% { color: rgb(0, 109, 128); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.color-typing-animation {
+  position: absolute;
+  top: 50px; /* Ajusta la distancia desde la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  animation: changeColor 10s linear infinite alternate,
+             typing 10s steps(30, end);
+  text-align: center; /* Centra el texto horizontalmente */
+
+}
+.heavy {
+  position: absolute; /* Añade posición absoluta al cuadrado */
+  bottom: 100px; /* Ajusta la distancia desde abajo según tu necesidad */
+  left: 10%; /* Centra el cuadrado horizontalmente */
+  transform: translateX(-50%); /* Centra el cuadrado horizontalmente */
+  width: 400px;
+  height: 400px; /* Ajusta la altura según tu necesidad */
+  background-image: url(https://media.tenor.com/RvCQesq9dh8AAAAM/metal-metal-music.gif  );
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.principal {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-image: url(https://i.gifer.com/origin/2f/2f070aee81753dbcdafce1a4b227bc66_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+
+}
+.shrek {
+  position: absolute; /* Añade posición absoluta al cuadrado */
+  bottom: 500px; /* Ajusta la distancia desde abajo según tu necesidad */
+  left: 90%; /* Centra el cuadrado horizontalmente */
+  transform: translateX(-50%); /* Centra el cuadrado horizontalmente */
+  width: 400px;
+  height: 400px; /* Ajusta la altura según tu necesidad */
+  background-image: url(https://i.gifer.com/origin/dc/dc271b8f5006989a2358323e1cf04ac9_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+}
+.calamardo {
+  position: absolute; /* Añade posición absoluta al cuadrado */
+  bottom: 100px; /* Ajusta la distancia desde abajo según tu necesidad */
+  left: 80%; /* Centra el cuadrado horizontalmente */
+  transform: translateX(-50%); /* Centra el cuadrado horizontalmente */
+  width: 200px;
+  height: 200px; /* Ajusta la altura según tu necesidad */
+  background-image: url(https://i.gifer.com/origin/2d/2d4adaf81d4a24d3da1a5c93834e56b9_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+}
+.tiburon {
+  position: absolute; /* Añade posición absoluta al cuadrado */
+  bottom: 600px; /* Ajusta la distancia desde abajo según tu necesidad */
+  left: 60%; /* Centra el cuadrado horizontalmente */
+  transform: translateX(-50%); /* Centra el cuadrado horizontalmente */
+  width: 200px;
+  height: 200px; /* Ajusta la altura según tu necesidad */
+  background-image: url(https://i.gifer.com/origin/d8/d8c2c87772378b7e00deeefd8c843a12_w200.webp);
+  background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  animation:fadeIn 300ms infinite;
+}
